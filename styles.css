@@ -1,13 +1,14 @@
 :root {
   color-scheme: light;
-  --page: #fffbea;
+  --page: #f0f8ef;
   --surface: #ffffff;
+  --card: #edf7eb;
   --ink: #17251b;
   --muted: #66776b;
   --green: #078a43;
   --green-dark: #056331;
   --green-soft: #e5f7e9;
-  --gold: #f5d900;
+  --gold: #83bd62;
   --line: #dcebdc;
   --shadow: 0 8px 24px rgba(7, 94, 48, 0.09);
 }
@@ -29,7 +30,7 @@ body {
   color: var(--ink);
   font-family: "Segoe UI", Arial, sans-serif;
   background:
-    linear-gradient(rgba(255, 251, 234, 0.76), rgba(255, 251, 234, 0.84)),
+    linear-gradient(rgba(239, 248, 238, 0.78), rgba(239, 248, 238, 0.86)),
     url("background%20pkkm.jpg") center center / cover fixed,
     var(--page);
 }
@@ -95,9 +96,9 @@ h1 {
   align-items: center;
   gap: 8px;
   padding: 7px 12px;
-  border: 1px solid #e8db55;
+  border: 1px solid #c9e0bd;
   border-radius: 999px;
-  background: #fff9ce;
+  background: #e8f4e3;
   color: var(--green-dark);
   font-size: 0.67rem;
   font-weight: 750;
@@ -140,7 +141,7 @@ h1 {
   padding: 13px 15px;
   border: 1px solid var(--line);
   border-radius: 15px;
-  background: var(--surface);
+  background: var(--card);
   box-shadow: var(--shadow);
   color: var(--ink);
   text-decoration: none;
@@ -150,6 +151,7 @@ h1 {
 .link-card:hover {
   transform: translateY(-2px);
   border-color: var(--green);
+  background: var(--surface);
   box-shadow: 0 12px 26px rgba(7, 94, 48, 0.16);
 }
 
@@ -173,15 +175,15 @@ h1 {
 }
 
 .link-icon--gold {
-  background: #fff7b8;
-  color: #775f00;
+  background: #e2f2dc;
+  color: #276b37;
   font-size: 0.7rem;
 }
 
 .link-icon--outline {
-  border: 1px solid #eee188;
-  background: #fffbe2;
-  color: #705d00;
+  border: 1px solid #cfe3c7;
+  background: #f0f8ed;
+  color: #356b3a;
   font-size: 0.7rem;
 }
 
