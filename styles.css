@@ -222,34 +222,65 @@ h1 {
 }
 
 .social-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 9px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .social-links a {
-  display: inline-flex;
+  display: flex;
+  min-width: 0;
+  min-height: 52px;
   align-items: center;
-  gap: 9px;
-  padding: 10px 14px;
+  gap: 10px;
+  padding: 9px 12px;
   border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.88);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
   color: var(--green-dark);
   font-size: 0.8rem;
   font-weight: 650;
   text-decoration: none;
-  transition: border-color 160ms ease, background 160ms ease;
+  box-shadow: var(--shadow);
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
 .social-links a:hover {
+  transform: translateY(-2px);
   border-color: var(--green);
   background: var(--surface);
 }
 
-.social-links span {
+.social-links a:focus-visible {
+  outline: 3px solid rgba(7, 138, 67, 0.4);
+  outline-offset: 3px;
+}
+
+.social-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--green-soft);
+  color: var(--green-dark);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.social-links a:first-child .social-icon {
+  font-size: 0.52rem;
+}
+
+.social-arrow {
+  margin-left: auto;
   color: var(--muted);
+  font-size: 1rem;
+}
+
+.social-link--wide {
+  grid-column: 1 / -1;
 }
 
 .footer {
