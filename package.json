@@ -1,0 +1,25 @@
+{
+  "name": "file-storage-web",
+  "version": "1.0.0",
+  "description": "Aplikasi web sederhana untuk penyimpanan file",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "file",
+    "upload",
+    "storage",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
